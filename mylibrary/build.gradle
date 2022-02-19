@@ -1,4 +1,6 @@
-apply plugin : 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven' // 增加
+group = 'com.github.StarPine'
 
 
 android {
@@ -6,13 +8,13 @@ android {
     buildToolsVersion "32.0.0"
 
     defaultConfig {
-        applicationId "com.starpine.moduletest"
         minSdkVersion 16
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
