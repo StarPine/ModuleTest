@@ -1,4 +1,4 @@
-package com.starpine.moduletest;
+package com.starpine.mylibrary;
 
 import android.util.Log;
 
